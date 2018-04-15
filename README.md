@@ -7,24 +7,26 @@ A simple easy to navigate site which allows the user to explore the different so
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See Deployment for notes on how to deploy the project on a live system.
 
 ### Requirements:
-```
-Python 3 or above
 
-Django 2 or above
+* Python 3 or above
 
-Widget-tweaks for Django
+* Django 2 or above
 
-Internet connection for CDN's ( Bootstrap , JQuery etc. )
-```
+* Widget-tweaks for Django
+
+* Internet connection for CDN's ( Bootstrap , JQuery etc. )
+
 ## Deployment
 
-Run using **python manage.py runserver** command after enabling the Virtual Environment ( venv ) in :-
+Run using 
 
-```
-CMD ( For Windows )
+```python manage.py runserver```
 
-Terminal ( For Macintosh )
-```
+command after enabling the *Virtual Environment ( venv )* in :-
+
+* CMD ( For Windows )
+
+* Terminal ( For Macintosh )
 
 ## Built With
 
