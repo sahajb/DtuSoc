@@ -31,6 +31,7 @@ command after enabling the *Virtual Environment ( venv )* in :-
 ## Built With
 
 * [WebStorm](https://www.jetbrains.com/webstorm/) - The Web IDE used
+
 * [jQuery](https://jquery.com/) - Front End library
 
 ## Authors
@@ -48,4 +49,5 @@ Best viewed in Google Chrome
 ## Acknowledgments
 
 * [StackOverflow](https://stackoverflow.com/) - as always
+
 * [Simple is Better than Complex](https://simpleisbetterthancomplex.com/)
