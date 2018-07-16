@@ -22,10 +22,12 @@
     <a href="contact.html">Contact&nbsp;<i class="glyphicon glyphicon-earphone"></i></a>
 </div>
 <div id="main">
-    <a href="javascript:" id="topbtn" onclick="topbtn()" title="Go To Top"><i class="glyphicon glyphicon-chevron-up"></i></a>
+    <a href="javascript:" id="topbtn" onclick="topbtn()" title="Go To Top"><i
+            class="glyphicon glyphicon-chevron-up"></i></a>
     <header id=head class="container">
         <div class="row" style="width: 100%">
-            <h2 class="col-sm-4"><a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a></h2>
+            <h2 class="col-sm-4"><a class=home href="index.html" style="text-decoration: none;color: white;">DtuSoc</a>
+            </h2>
             <nav class="col-sm-8">
             </nav>
             <p id="web" onclick="menu()">MENU</p>
@@ -41,19 +43,22 @@
             <h1 style="text-align: center;font-size: 100px; color: white"><b>IEEE</b></h1>
 
             <hr style="width: 60%;margin-left: auto;height: 3px;top:10px">
-            </div>
+        </div>
     </section>
     <br><br>
     <section class="container about">
         <div class="abtbox col-sm-12" style="width: 90%; height: 100%; left: 5%; padding: 0; margin: 0; overflow: auto">
             <header>
-                <br><h1 style="text-align: center; color: black">About Us</h1><br>
+                <br>
+                <h1 style="text-align: center; color: black">About Us</h1><br>
             </header>
-            <footer style="text-align: center;color: black;font-size:20px">
-              <p> <font size="6" color="black">
-                 IEEE DTU, the oldest student branch in Delhi Section of the Asia Pacific Region is devoted to its aim of instilling scientific temperament in the
-student community through a plethora of activities around the year. It boasts of the largest number of student members in Delhi Section.
-             </font></p>
+            <footer style="text-align: center;color: black;">
+                <p>
+                    IEEE DTU, the oldest student branch in Delhi Section of the Asia Pacific Region is devoted to its
+                    aim of instilling scientific temperament in the
+                    student community through a plethora of activities around the year. It boasts of the largest number
+                    of student members in Delhi Section.
+                </p>
             </footer>
         </div>
     </section>
@@ -72,10 +77,12 @@ student community through a plethora of activities around the year. It boasts of
         </ul>
         <div class="tab-content">
             <div id="home" class="tab-pane fade">
-              <h3 style="color: black"> <font size = "6"> IEEE DTU, the oldest student branch in Delhi Section of the Asia Pacific Region is devoted to its aim of instilling scientific temperament in the
-student community through a plethora of activities around the year. It boasts of the largest number of student members in Delhi Section.
+                <h3 style="color: black"><font size="6"> IEEE DTU, the oldest student branch in Delhi Section of the
+                    Asia Pacific Region is devoted to its aim of instilling scientific temperament in the
+                    student community through a plethora of activities around the year. It boasts of the largest number
+                    of student members in Delhi Section.
 
-              </font></h3>
+                </font></h3>
             </div>
             <div id="menu1" class="tab-pane fade in active">
                 <br>
@@ -85,13 +92,13 @@ student community through a plethora of activities around the year. It boasts of
                             <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src = "{% static 'ieee1.png' %}"/>
+                                        <img src="{% static 'ieee1.png' %}"/>
                                     </div>
                                     <div class="item">
                                         <img src="{% static 'ieee2.jpg' %}"/>
                                     </div>
                                     <div class="item">
-                                        <img src = "{% static 'ieee3.jpg' %}"/>
+                                        <img src="{% static 'ieee3.jpg' %}"/>
                                     </div>
                                     <div class="item">
                                         <img src="{% static 'ieee4.jpg' %}"/>
@@ -112,25 +119,35 @@ student community through a plethora of activities around the year. It boasts of
                             </div>
                             <br>
                             <div class="clearfix">
-                                <div id="thumbcarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                <div id="thumbcarousel" class="carousel slide" data-ride="carousel"
+                                     data-interval="false">
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="{% static 'ieee1.png' %}"/></div>
-                                            <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="{% static 'ieee2.jpg' %}"></div>
-                                            <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="{% static 'ieee3.jpg' %}"/></div>
-                                            <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="{% static 'ieee4.jpg' %}"></div>
+                                            <div data-target="#carousel" data-slide-to="0" class="thumb"><img
+                                                    src="{% static 'ieee1.png' %}"/></div>
+                                            <div data-target="#carousel" data-slide-to="1" class="thumb"><img
+                                                    src="{% static 'ieee2.jpg' %}"></div>
+                                            <div data-target="#carousel" data-slide-to="2" class="thumb"><img
+                                                    src="{% static 'ieee3.jpg' %}"/></div>
+                                            <div data-target="#carousel" data-slide-to="3" class="thumb"><img
+                                                    src="{% static 'ieee4.jpg' %}"></div>
                                         </div>
                                         <div class="item">
-                                            <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="{% static 'ieee5.jpg' %}"></div>
-                                            <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="{% static 'ieee6.jpg' %}"></div>
-                                            <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="{% static 'ieee7.jpg' %}"></div>
-                                            <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="{% static 'ieee8.jpg' %}"></div>
+                                            <div data-target="#carousel" data-slide-to="4" class="thumb"><img
+                                                    src="{% static 'ieee5.jpg' %}"></div>
+                                            <div data-target="#carousel" data-slide-to="5" class="thumb"><img
+                                                    src="{% static 'ieee6.jpg' %}"></div>
+                                            <div data-target="#carousel" data-slide-to="6" class="thumb"><img
+                                                    src="{% static 'ieee7.jpg' %}"></div>
+                                            <div data-target="#carousel" data-slide-to="7" class="thumb"><img
+                                                    src="{% static 'ieee8.jpg' %}"></div>
                                         </div>
                                     </div>
                                     <a id="left" class="left carousel-control" href="#thumbcarousel" data-slide="prev">
                                         <span class="glyphicon glyphicon-chevron-left"></span>
                                     </a>
-                                    <a id="right" class="right carousel-control" href="#thumbcarousel" data-slide="next">
+                                    <a id="right" class="right carousel-control" href="#thumbcarousel"
+                                       data-slide="next">
                                         <span class="glyphicon glyphicon-chevron-right"></span>
                                     </a>
                                 </div>
@@ -140,14 +157,14 @@ student community through a plethora of activities around the year. It boasts of
                 </div>
             </div>
             <div id="menu2" class="tab-pane fade">
-              <h3 style="color: black"> <font size = "6"><br> Facebook: @IEEEDTU <br> <br>
-                  Call: 0983717827 <br> <br>
-                  Website: <a href = "http://www.ieeedtu.com">http://www.ieeedtu.com</a> <br><br>
-                  E-mail: contact@ieeedtu.com
+                <h3 style="color: black"><font size="6"><br> Facebook: @IEEEDTU <br> <br>
+                    Call: 0983717827 <br> <br>
+                    Website: <a href="http://www.ieeedtu.com">http://www.ieeedtu.com</a> <br><br>
+                    E-mail: contact@ieeedtu.com
                 </font></h3>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
     <br><br><br>
     <footer id=foot class="container">
         <div class="row">
@@ -156,16 +173,19 @@ student community through a plethora of activities around the year. It boasts of
             </h1>
             <ul class="col-sm-8" style="top: 0;">
                 <li>
-                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour" style="text-decoration: none" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour"
+                       style="text-decoration: none" class="fa fa-facebook"></a>
                 </li>
-                <li >
+                <li>
                     <a href="https://twitter.com/DtuSoc" style="text-decoration: none" class="fa fa-twitter"></a>
                 </li>
-                <li >
-                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none" class="fa fa-instagram"></a>
+                <li>
+                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none"
+                       class="fa fa-instagram"></a>
                 </li>
-                <li >
-                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none" class="fa fa-youtube"></a>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none"
+                       class="fa fa-youtube"></a>
                 </li>
             </ul>
         </div>

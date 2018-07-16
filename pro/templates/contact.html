@@ -1,14 +1,15 @@
 {% load widget_tweaks %}{% load static %}<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <title>Contact Us</title>
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="{% static 'index.js' %}"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Contact Us</title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'index.js' %}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div id="sidenav" class="sidenav">
@@ -30,50 +31,50 @@
         </div>
     </header>
     <br><br>
-  <div class="container">
-      <form method="post" novalidate>
-          {% csrf_token %}
+    <div class="container">
+        <form method="post" novalidate>
+            {% csrf_token %}
 
-          {% for hidden_field in form.hidden_fields %}
-          {{ hidden_field }}
-          {% endfor %}
+            {% for hidden_field in form.hidden_fields %}
+            {{ hidden_field }}
+            {% endfor %}
 
-          {% if form.non_field_errors %}
-          <div class="alert alert-danger" role="alert">
-              {% for error in form.non_field_errors %}
-              {{ error }}
-              {% endfor %}
-          </div>
-          {% endif %}
+            {% if form.non_field_errors %}
+            <div class="alert alert-danger" role="alert">
+                {% for error in form.non_field_errors %}
+                {{ error }}
+                {% endfor %}
+            </div>
+            {% endif %}
 
-          {% for field in form.visible_fields %}
-          <div class="form-group">
-              {{ field.label_tag }}
+            {% for field in form.visible_fields %}
+            <div class="form-group">
+                {{ field.label_tag }}
 
-              {% if form.is_bound %}
-              {% if field.errors %}
-              {% render_field field class="form-control is-invalid" %}
-              {% for error in field.errors %}
-              <div class="invalid-feedback">
-                  {{ error }}
-              </div>
-              {% endfor %}
-              {% else %}
-              {% render_field field class="form-control is-valid" %}
-              {% endif %}
-              {% else %}
-              {% render_field field class="form-control" %}
-              {% endif %}
+                {% if form.is_bound %}
+                {% if field.errors %}
+                {% render_field field class="form-control is-invalid" %}
+                {% for error in field.errors %}
+                <div class="invalid-feedback">
+                    {{ error }}
+                </div>
+                {% endfor %}
+                {% else %}
+                {% render_field field class="form-control is-valid" %}
+                {% endif %}
+                {% else %}
+                {% render_field field class="form-control" %}
+                {% endif %}
 
-              {% if field.help_text %}
-              <small class="form-text text-muted">{{ field.help_text }}</small>
-              {% endif %}
-          </div>
-          {% endfor %}
+                {% if field.help_text %}
+                <small class="form-text text-muted">{{ field.help_text }}</small>
+                {% endif %}
+            </div>
+            {% endfor %}
 
-          <button type="submit" class="btn btn-primary" style="margin-left: 50%;cursor: pointer">Submit</button>
-      </form>
-  </div>
+            <button type="submit" class="btn btn-primary" style="margin-left: 50%;cursor: pointer">Submit</button>
+        </form>
+    </div>
     <br><br><br>
     <footer id=foot class="container" style="max-width: 100%">
         <div class="row">
@@ -82,16 +83,19 @@
             </h1>
             <ul class="col-sm-8" style="">
                 <li>
-                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour" style="text-decoration: none" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/DtuSoc-1677457745685541/?modal=admin_todo_tour"
+                       style="text-decoration: none" class="fa fa-facebook"></a>
                 </li>
-                <li >
+                <li>
                     <a href="https://twitter.com/DtuSoc" style="text-decoration: none" class="fa fa-twitter"></a>
                 </li>
-                <li >
-                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none" class="fa fa-instagram"></a>
+                <li>
+                    <a href="https://www.instagram.com/dtu_soc/" style="text-decoration: none"
+                       class="fa fa-instagram"></a>
                 </li>
-                <li >
-                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none" class="fa fa-youtube"></a>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCVbwMITlRQRvgYxQqZ05wjg" style="text-decoration: none"
+                       class="fa fa-youtube"></a>
                 </li>
             </ul>
         </div>
